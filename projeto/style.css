@@ -1,0 +1,80 @@
+*{
+    box-sizing:border-box
+}
+
+body{
+    margin:  0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eee8f5;
+    color: #302044;
+    }
+
+main{
+    max-width: 90px;
+    margin:auto ;
+    }
+
+header {
+    background:#39204d;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+section.robo{
+    background: white;
+    padding: 20px;
+    margin: 18px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #00000012;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px splid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 11px 16px;
+    background: #663399;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover{
+    background: #512080;
+}
+
+a{
+    color: 663399;
+    margin-left: 10px;
+}
+
+Explorador{
+    border-left: 6px soild white;
+}
+
+Engenheiro{
+    border-left: 6px soild white;
+}
+
+Defensor{
+    border-left: 6px soild white;
+}
+.mensagem{
+    padding: 14px;
+    background: #e4d8f3;
+    border-radius: 8px;
+}
+.energia{
+    font-weight: bold;
+}
+@media(max-width){
+    
+}

@@ -1,4 +1,4 @@
-1. Desafio
+1. Desafio:
 Uma estação espacial precisa de um sistema web para administrar sua frota de robôs. Sua missão é
 desenvolver a Central de Robôs, uma aplicação que permita cadastrar robôs, consultar seus dados e realizar
 recargas de energia. O sistema deverá funcionar com PHP e armazenar as informações em arquivo JSON, sem

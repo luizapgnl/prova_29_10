@@ -3,108 +3,73 @@
     recargas de energia. O sistema deverá funcionar com PHP e armazenar as informações em arquivo JSON, sem
     banco de dados !-->
     <?php
-        class explorador{
+        //Criar a classe Robo com os atributos nome, modelo, energia e potencia.
+        class robo{
             public $nome;
             public $modelo;
             public $energia;
+            public $operador;
             public $funcao;
+            public $id;
 
-            function operar(){
-                echo "Investigar planetas";
-                echo "Operadora: Ana";
-            
-            function modelo1(){
-                echo "Explorador";
-            }
+            // Criar formulário HTML com os campos nome do robô, modelo e nome do operador
+            public funcition__construt($nome, $modelo, $operador, $energia = null, $id = null){
+                    $configuracoes = [
+                        "Explorador" =>[
+                            "energia" => 100,
+                            "potencia" => 20
+                        ],
 
-            function energia1(){
-                echo "100";
-            }
+                        "Engenheiro" =>[
+                            "energia" => 120,
+                            "potencia" => 15
+                        ],
 
-            function potencia1(){
-                echo "20";
-            }
-            function funcao1(){
-                echo "Investigar planetas";
-            }
-            }
-            
-            }
+                        "Defensor" =>[
+                            "energia" => 150,
+                            "potencia" => 30
+                        ]
+                        ];
+                    
 
-        
+                        if (!isset($configuracoes[$modelo]){
+                        throw new InvalidArgumentException("Modelo Inválido!")
+                    }
 
-        class engenheiro{
-            public $nome;
-            public $modelo;
-            public $energia;
-            public $funcao;
 
-            function operar(){
-                echo "Reparar Equipamentos";
-                
-                function modelo2(){
-                    echo "Engenheiro";
-                }
-    
-                function energia2(){
-                    echo "120";
-                }
-    
-                function potencia2(){
-                    echo "15";
-                }
-                function funcao2(){
-                    echo "Reparar equipamentos";
-                }
+                        $this->id $id ?? uniqid("robo_");
+                        $this-> nome = $nome;
+                        $this-> modelo = $modelo;
+                        $this-> operador = $operador;
+
+                        $this-> energia = $energia ?? $configuracoes["$modelo"]["$energia"];
+                        $this-> energia = $potencis ?? $configuracoes["$modelo"]["$potencia"];
+            }
         }
-    }
 
-    class defensor{
-        public $nome;
-        public $modelo;
-        public $energia;
-        public $funcao;
+            public funcition exibirStatus(){
+                return "Nome .$this-> Nome";
+                    "| Energia: .$this-> Energia".
+                    "| Potencia: .$this-> Potencia";
 
-        function operar(){
-            echo "Reparar Equipamentos";
-            
-            function modelo3(){
-                echo "Defensor";
             }
-
-            function energia3(){
-                echo "150";
-            }
-
-            function potencia3(){
-                echo "30";
-            }
-            function funcao3(){
-                echo "Proteger a Estação";
-            }
-    }
-}
-
-    ?>
-
-    <!DOCTYPE html>
-    <html lang="pt-Br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>CENTRAL DE ROBOS</title>
+            public funcition recarregar(){
+                $this-> energia = min(200, $this->energia + 10);
 
-        <p>Cadastrar Robos</p>
+            }
+        
+            public funcition paraArray(){
 
-        <h1>Robô Explorador</h1>
-        <h1>Robô Engenheiro</h1>
-        <h1>Robô Explorador</h1>
-        <button>"Cadastrar Robo"</button>
+                return[
+                    "id" => $this-> id,
+                    "nome"=> $this-> nome = $nome,
+                    "modelo"=> $this-> modelo = $modelo,
+                    "operador"=> $this-> operador = $operador
+                ];
+            }
+        
 
-    </head>
-    <body>
 
-
-    </body>
-    </html>
+        
+    ?>
