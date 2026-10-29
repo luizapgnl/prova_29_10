@@ -11,6 +11,7 @@
 
             function operar(){
                 echo "Investigar planetas";
+                echo "Operadora: Ana";
             
             function modelo1(){
                 echo "Explorador";
@@ -27,7 +28,7 @@
                 echo "Investigar planetas";
             }
             }
-
+            
             }
 
         
@@ -104,6 +105,6 @@
     </head>
     <body>
 
-        
+
     </body>
     </html>
