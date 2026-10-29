@@ -53,22 +53,36 @@
                     echo "15";
                 }
                 function funcao2(){
-                    echo "Reparar equipamentos
-";
+                    echo "Reparar equipamentos";
                 }
         }
     }
 
-        class defensor{
-            public $nome;
-            public $modelo;
-            public $energia;
-            public $funcao;
+    class defensor{
+        public $nome;
+        public $modelo;
+        public $energia;
+        public $funcao;
 
-            function operar(){
+        function operar(){
+            echo "Reparar Equipamentos";
+            
+            function modelo3(){
+                echo "Defensor";
+            }
+
+            function energia3(){
+                echo "150";
+            }
+
+            function potencia3(){
+                echo "30";
+            }
+            function funcao3(){
                 echo "Proteger a Estação";
-        }
+            }
     }
+}
 
     ?>
 
@@ -85,6 +99,7 @@
         <h1>Robô Explorador</h1>
         <h1>Robô Engenheiro</h1>
         <h1>Robô Explorador</h1>
+        <button>"Cadastrar Robo"</button>
 
     </head>
     <body>
